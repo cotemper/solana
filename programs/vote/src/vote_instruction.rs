@@ -457,16 +457,11 @@ mod tests {
         solana_program_runtime::{
             invoke_context::mock_process_instruction, sysvar_cache::SysvarCache,
         },
-<<<<<<< HEAD
         solana_sdk::{
             account::{self, Account, AccountSharedData},
             rent::Rent,
         },
         std::{cell::RefCell, rc::Rc, str::FromStr},
-=======
-        solana_sdk::account::{self, Account, AccountSharedData},
-        std::str::FromStr,
->>>>>>> b211f839cb (Fetch sysvars from invoke context for vote program (#22444))
     };
 
     fn create_default_account() -> Rc<RefCell<AccountSharedData>> {
